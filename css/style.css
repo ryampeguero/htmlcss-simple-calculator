@@ -4,3 +4,37 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* COMMON */
+img {
+    max-width: 100%;
+}
+
+/* HEADER */
+.columns {
+    display: flex;
+    
+    
+}
+
+.container{
+    width: 40%;
+    margin: 300px auto;
+    /* debug */
+    background-color: pink;
+}
+
+.logo {
+    text-align: center;
+
+}
+
+.screen {
+    background-color: black;
+    color: green;
+    border: 1px solid black;
+}
+
+.calculator {
+    background-color: lightblue;
+}
