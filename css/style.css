@@ -10,15 +10,27 @@ img {
     max-width: 100%;
 }
 
+.flex {
+    display: flex;
+}
+
 /* HEADER */
 .columns {
     display: flex;
+    height: 100%;
     
+    /* debug */
+    border: 4px solid blue;
+    /* background-color: red; */
     
 }
 
+/* .columns > .wrap {
+    flex-grow: 1;
+} */
+
 .container{
-    width: 40%;
+    width: 300px;
     margin: 300px auto;
     /* debug */
     background-color: pink;
@@ -37,4 +49,82 @@ img {
 
 .calculator {
     background-color: lightblue;
+    display: flex;
+    flex-direction: row;
 }
+
+/* KEYS */
+.keys {
+    display: flex; 
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    width: 100%;
+    height: 300px;
+    background-color: blanchedalmond;
+
+    /* debug */
+    border: 1px solid red;
+
+}
+
+.n-keys {
+    flex-grow: 4;
+    
+    /* debug */
+    padding: 30px;
+    margin: 20px;
+    /* border: 1px solid black; */
+  
+}
+
+.op-keys{
+    flex-grow: 1;
+    
+    /* debug */
+    border: 1px solid green;
+
+}
+
+.square{
+   background-color: #D5D5D5;
+    height: 40px;
+    width: 40px;
+}
+
+/* debug1 */
+#calculator{
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    width: 580px;
+    background-color: rgb(240, 240, 240);
+ }
+ 
+ #keys{
+    height: 100px;
+    background-color: rgb(200, 200, 200);
+    
+ }
+ 
+ #columns{
+    display: flex;
+    height: 100%;
+ }
+ 
+ #n-keys {
+    background-color: red;
+    flex: 4;
+
+    padding: 30px;
+    margin: 20px;
+ }
+ 
+ #op-keys {
+    background-color: blue;
+    flex: 1;
+ }
+
+ #n-keys button {
+
+ }
